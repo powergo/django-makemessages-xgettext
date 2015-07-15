@@ -1,0 +1,1 @@
+# django-makemessages-xgettext
