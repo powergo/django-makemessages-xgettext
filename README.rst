@@ -38,11 +38,11 @@ Usage
 As a way to generate .po files without the line number comment reference
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Just use the `xgettextmakemessages` command instead of the `makemessages` command:
+Just use the `makemessagesxgettext` command instead of the `makemessages` command:
 
 ::
 
-    python manage.py xgettextmakemessages -a -X=--add-location=file
+    python manage.py makemessagesxgettext -a -X=--add-location=file
 
 License
 -------
