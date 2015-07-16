@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-07-16 15:07+0000\n"
+"POT-Creation-Date: 2015-07-16 19:33+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,14 +17,14 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
-#: test_app/views.py:6
+#: test_app/views.py
 msgid "Hello, world."
 msgstr "Bonjour, monde"
 
-#: test_project/settings.py:93
+#: test_project/settings.py
 msgid "English"
 msgstr "Anglais"
 
-#: test_project/settings.py:94
+#: test_project/settings.py
 msgid "French"
 msgstr "Français"

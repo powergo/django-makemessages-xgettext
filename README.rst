@@ -17,9 +17,20 @@ django-makemessages-xgettext works with Python 2.7 and 3.4. It requires Django 1
 Installation
 ------------
 
+Install with pip
+
 ::
 
     pip install django-makemessages-xgettext
+
+Then add "django_makemessages_xgettext" to the INSTALLED_APPS list in settings.py
+
+::
+
+    INSTALLED_APPS = [
+        ...
+        "django_makemessages_xgettext",
+    ]
 
 Usage
 -----
@@ -31,7 +42,7 @@ Just use the `xgettextmakemessages` command instead of the `makemessages` comman
 
 ::
 
-    python manage.py xgettextmakemessages -a -X --add-location=file
+    python manage.py xgettextmakemessages -a -X=--add-location=file
 
 License
 -------
