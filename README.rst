@@ -5,7 +5,7 @@ django-makemessages-xgettext - Generates translation with additional options
   Resulto Developpement Web Inc.
 :Version: 0.1
 
-This projects has one goal:
+This project has one goal:
 
 1. Allow makemessages to receive additional parameters to pass to xgettext.
 
