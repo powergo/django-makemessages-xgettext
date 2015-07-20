@@ -28,7 +28,8 @@ class MakeMessagesXGetTextTestCase(TestCase):
 
     def test_makemessages_xgettext_add_location_file(self):
         # Silently generate en locale files
-        call_command('makemessagesxgettext', locale=[LOCALE], xgettext=['--no-location'])
+        call_command('makemessagesxgettext', locale=[LOCALE],
+                     xgettext=['--no-location'])
 
         # Validate that it's created
         self.assertTrue(os.path.exists(PO_FILE))
@@ -37,7 +38,7 @@ class MakeMessagesXGetTextTestCase(TestCase):
             for line in (
                     line for line in po_file.readlines()
                     if line.startswith('#:')):
-                # Check to see if the : separator (file:loc) is not there
+                # Check that it's not a location comment
                 self.assertNotIn(':', line[2:])
 
         # Remove locale tree folder
