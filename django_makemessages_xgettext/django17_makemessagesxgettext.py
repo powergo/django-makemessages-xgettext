@@ -14,7 +14,9 @@ class Command(makemessages.Command):
     )
 
     def handle_noargs(self, *args, **options):
-        for option in options['xgettext']:
+        xgettext_cmd_options = options.pop('xgettext')
+
+        for option in xgettext_cmd_options:
             self.xgettext_options = self.xgettext_options[:] + [option]
 
         options.pop('xgettext')
