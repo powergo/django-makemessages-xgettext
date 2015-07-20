@@ -19,6 +19,4 @@ class Command(makemessages.Command):
         for option in xgettext_cmd_options:
             self.xgettext_options = self.xgettext_options[:] + [option]
 
-        options.pop('xgettext')
-
         super(Command, self).handle_noargs(*args, **options)
