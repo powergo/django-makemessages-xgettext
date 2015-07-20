@@ -28,7 +28,7 @@ class MakeMessagesXGetTextTestCase(TestCase):
 
     def test_makemessages_xgettext_add_location_file(self):
         # Silently generate en locale files
-        call_command('makemessagesxgettext', locale=[LOCALE], xgettext=['--add-location=file', ])
+        call_command('makemessagesxgettext', locale=[LOCALE], xgettext=['--no-location'])
 
         # Validate that it's created
         self.assertTrue(os.path.exists(PO_FILE))
