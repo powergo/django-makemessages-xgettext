@@ -101,7 +101,7 @@ LANGUAGES = (
 )
 
 LOCALE_PATHS = (
-    os.path.join(BASE_DIR, "test_project/locale"),
+    os.path.join(BASE_DIR, "locale"),
 )
 
 TIME_ZONE = 'UTC'
