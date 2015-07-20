@@ -15,9 +15,6 @@ class MakeMessagesXGetTextTestCase(TestCase):
         self.locale_dir = os.path.abspath(os.path.join(BASE_DIR, '../locale'))
 
     def test_makemessages_xgettext(self):
-        # Change Working Directory before calling the command
-        os.chdir(self.test_project_dir)
-
         # Silently generate en locale files
         call_command('makemessagesxgettext', locale=[LOCALE], verbosity=0,)
 
@@ -28,9 +25,6 @@ class MakeMessagesXGetTextTestCase(TestCase):
         shutil.rmtree(self.locale_dir)
 
     def test_makemessages_xgettext_add_location_file(self):
-        # Change Working Directory before calling the command
-        os.chdir(self.test_project_dir)
-
         # Silently generate en locale files
         call_command('makemessagesxgettext', locale=[LOCALE], verbosity=0,
                      xgettext=['--add-location=file'])
