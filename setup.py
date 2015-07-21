@@ -41,9 +41,8 @@ setup(
 
         # Indicate who your project is intended for
         'Intended Audience :: Developers',
-        'Topic :: Communications',
         'Topic :: Software Development :: Libraries :: Python Modules',
-        'Topic :: System :: Distributed Computing',
+        'Topic :: Software Development :: Internationalization',
 
         # Pick your license as you wish (should match "license" above)
         'License :: OSI Approved :: BSD License',
@@ -57,7 +56,7 @@ setup(
     ],
 
     # What does your project relate to?
-    keywords='django makemessages xgettext',
+    keywords='django makemessages xgettext gettext',
 
     # You can just specify the packages manually here if your project is
     # simple. Or you can use find_packages().
