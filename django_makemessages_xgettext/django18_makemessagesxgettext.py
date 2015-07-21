@@ -5,7 +5,7 @@ class Command(makemessages.Command):
 
     def add_arguments(self, parser):
         super(Command, self).add_arguments(parser)
-        parser.add_argument('--xgettext', '-X',
+        parser.add_argument('--xgettext',
                             default=[], dest='xgettext', action='append',
                             help='Passes arguments to the xgettext command '
                                  '(e.g. --add-location=file). Use multiple '

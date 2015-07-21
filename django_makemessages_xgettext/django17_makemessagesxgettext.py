@@ -5,7 +5,7 @@ from django.core.management.commands import makemessages
 class Command(makemessages.Command):
 
     option_list = makemessages.Command.option_list + (
-        make_option('--xgettext', '-X',
+        make_option('--xgettext',
                     default=[], dest='xgettext', action='append',
                     help='Passes arguments to the xgettext command (e.g. '
                          '--add-location=file). Use multiple times to pass '

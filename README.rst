@@ -42,7 +42,7 @@ Just use the `makemessagesxgettext` command instead of the `makemessages` comman
 
 ::
 
-    python manage.py makemessagesxgettext -a -X=--add-location=file
+    python manage.py makemessagesxgettext -a --xgettext=--add-location=file
 
 License
 -------
