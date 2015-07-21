@@ -12,7 +12,9 @@ https://docs.djangoproject.com/en/1.8/ref/settings/
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 import os
 import sys
+
 from django.utils.translation import ugettext_lazy as _
+
 
 # import source code dir
 sys.path.insert(0, os.getcwd())

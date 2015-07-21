@@ -1,4 +1,4 @@
-django-makemessages-xgettext - Generates translation with additional options
+django-makemessages-xgettext - Generate translations with additional options
 ============================================================================
 
 :Authors:
