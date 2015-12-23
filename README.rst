@@ -3,7 +3,7 @@ django-makemessages-xgettext - Generate translations with additional options
 
 :Authors:
   Resulto Developpement Web Inc.
-:Version: 0.1
+:Version: 0.1.1
 
 This project has one goal:
 
